@@ -1,0 +1,95 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "../css/style";
+
+div.b4cs-event-list div.b4cs-event-row {
+	display: flex;
+    flex-direction: row;
+}
+
+div.b4cs-event-list div.b4cs-date-column {
+    width: 5rem;
+}
+
+div.b4cs-event-list div.b4cs-event-column {
+	width: 100%;
+}
+
+div.b4cs-event-list div.b4cs-date {
+    background-color: var(--b4cs-primary-color);
+    color: var(--b4cs-text-on-primary-color);
+    padding: 5px 5px;
+    max-width: 3.5rem;
+    text-align: center;
+    font-size: smaller;
+    border-radius: 5px;
+    line-height: 1rem;
+}
+
+div.b4cs-event-list div.b4cs-date .b4cs-day,
+div.b4cs-event-list div.b4cs-date .b4cs-date-number,
+div.b4cs-event-list div.b4cs-date .b4cs-month,
+div.b4cs-event-list div.b4cs-date .b4cs-year {
+    display: block;
+}
+
+div.b4cs-event-list div.b4cs-date .b4cs-date-number {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+div.b4cs-event-list div.b4cs-date .b4cs-year {
+    display: none;
+}
+
+div.b4cs-event-list div.b4cs-compact-event {
+    border: 1px solid var(--b4cs-border-lighter-color);
+    border-radius: 5px;
+    font-size: 0.9em;
+    line-height: 1em;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0.7em;
+}
+
+div.b4cs-event-list div.b4cs-compact-event:hover {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+div.b4cs-event-list div.b4cs-compact-event div.b4cs-event-name,
+div.b4cs-event-list div.b4cs-compact-event div.ce-event-name a {
+    font-size: 1em;
+}
+
+div.b4cs-event-list div.b4cs-event-card.pending {
+	display: none;
+}
+
+div.b4cs-event-list div.b4cs-event-card.cancelled {
+	color: var(--b4cs-text-lightest-color);
+}
+
+div.b4cs-event-list div.b4cs-event-card.cancelled div.b4cs-event-name {
+	text-decoration: line-through;
+}
+
+div.b4cs-compact-event span.b4cs-start-time{
+    font-weight: bold;
+}
+
+div.b4cs-compact-event div.b4cs-location,
+div.b4cs-compact-event div.b4cs-address,
+div.b4cs-compact-event div.b4cs-description {
+	line-height: 1em;
+	margin: 0.3em 0;
+}
+
+div.b4cs-compact-event div.b4cs-address {
+	font-size: 0.7em;
+	margin: 0.3rem 0 0.3rem 1.1rem;
+}

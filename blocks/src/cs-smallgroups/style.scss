@@ -1,0 +1,42 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ 
+@use "../css/style";
+
+div.b4cs-group {
+	/* Default width provides the right card size ... height is dependent on content */
+	width: 350px;
+    /* Default margin ensures cards are not 'squeezed' together too much */
+	margin: 1rem 1rem;
+	border-radius: 10px;
+	overflow: hidden;
+	font-size: inherit;
+}
+
+div.b4cs-group-image-area {
+	background-image: url("../assets/images/grow-pexels-1024x576.jpg");
+	background-size: cover;
+	height: 250px;
+}
+
+div.b4cs-group-image-area img {
+	height: 250px;
+	width: 350px;
+	object-fit: cover;
+}
+
+div.b4cs-group-details-area {
+	/* Add some padding around the internal text */
+	padding: 1rem 1rem;
+	font-size: inherit;
+}
+
+div.b4cs-group-name { 
+	font-size: 1.4em;
+	margin: 1rem 0;
+}
+
