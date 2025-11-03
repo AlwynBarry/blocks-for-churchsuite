@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Blocks For Churchsuite
- * Plugin URI:        https://github.com/AlwynBarry/blocks4cs
+ * Plugin URI:        https://github.com/AlwynBarry/blocks-for-churchsuite
  * Description:       Gutenberg blocks to display Data for Events and SmallGroups from ChurchSuite
  * Version:           1.0.0
  * Requires at least: 6.7
